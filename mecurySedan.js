@@ -19,22 +19,22 @@ loadPassengers(num){
             return this.passenger
         }
         } else{
-            console.log("The $(this.model) doesn't have enough space")
+            console.log("The ${this.model} doesn't have enough space")
      } else {
-        console.log("The $(this.model) is full")
+        console.log("The ${this.model} is full")
      }
 
 start(){
     if(this.fuel > 0){
-        console.log("The $(this.model) has started")
+        console.log("The ${this.model} has started")
     } else {
-        console.log("The $(this.model) has no gas")
+        console.log("The ${this.model} has no gas")
     }
 }
 
 scheduleService(mileage){
     if(this.mileage >= 30000){
-        console.log("The $(this.make, this.model) needs to be serviced")
+        console.log("The ${this.make this.model} needs to be serviced")
         this.scheduleService == true
         return this.scheduleService
     }
